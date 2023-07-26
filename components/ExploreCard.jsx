@@ -9,11 +9,13 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         className={`relative ${
             active === id ? "lg-flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
         } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] ease-out-flex cursor-pointer`}
+        onClick={() => handleClick(id)}
     >
         <Image
             src={imgUrl}
-            height={1000}
-            width={1000}
+            height={2000}
+            width={2000}
+            quality={90}
             alt={title}
             className="absolute w-full h-full object-cover rounded-[24px]"
         />
@@ -37,7 +39,9 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
                 <p className="font-normal text-[16] leading-[20px] text-white uppercase">
                     Enter the Metaverse
                 </p>
-                <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"></h2>
+                <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+                    {title}
+                </h2>
             </div>
         )}
     </motion.div>

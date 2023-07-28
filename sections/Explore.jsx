@@ -25,7 +25,7 @@ const Explore = () => {
                     title={
                         <>
                             Choose the world you want{" "}
-                            <br className="md-block hidden" />
+                            <br className="md:block hidden" />
                             to explore
                         </>
                     }

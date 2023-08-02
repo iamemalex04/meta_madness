@@ -83,7 +83,9 @@
         rgba(255, 255, 255, 0) 100%
     );
 }
-
+.gradient-06 {
+    background: linear-gradient(180deg, #d46062 0%, #880383 100%);
+}
 .feedback-gradient {
     position: absolute;
     width: 200px;
